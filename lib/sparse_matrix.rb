@@ -1,7 +1,16 @@
 require "sparse_matrix/version"
 
-module SparseMatrix
-  # Your code goes here...
+class SparseMatrix
+    @sparse_mat
+    
+    def initialize(b=0)
+        @sparse_mat=b
+    end
+
+    def to_s
+
+    end
+    
 end
 
 class Matrix_T
