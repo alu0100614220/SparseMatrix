@@ -1,9 +1,29 @@
 # SparseMatrix
 
-TODO: Write a gem description
+Build a sparce matrix from dense matrix
+
+## Tree
+
+    ├── Gemfile
+    ├── input
+    ├── lib
+    │   ├── sparse_matrix
+    │   │   └── version.rb
+    │   └── sparse_matrix.rb
+    ├── LICENSE.txt
+    ├── Rakefile
+    ├── README.md
+    ├── sparse_matrix.gemspec
+    ├── spec
+    │   └── math
+    │       ├── matrix_spec.rb
+    │       └── sparsematrix_spec.rb
+    └── test
+        └── math
+                ├── matrix_test.rb
+                        └── sparsematrix_test.rb
 
 ## Installation
-
 Add this line to your application's Gemfile:
 
     gem 'sparse_matrix'
@@ -17,13 +37,8 @@ Or install it yourself as:
     $ gem install sparse_matrix
 
 ## Usage
+as soon as
 
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+## Authors 
+    Kevin Robayna 
+    Jose Antonio Rodriguez Leandro

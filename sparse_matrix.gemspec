@@ -6,11 +6,11 @@ require 'sparse_matrix/version'
 Gem::Specification.new do |spec|
   spec.name          = "sparse_matrix"
   spec.version       = SparseMatrix::VERSION
-  spec.authors       = ["KevinRobayna"]
-  spec.email         = ["k3vinaso@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["KevinRobayna","JoseAntonio"]
+  spec.email         = ["k3vinaso@gmail.com","alu0100696691@ull.edu.es"]
+  spec.description   = %q{Build a sparse matrix from dense matrix}
+  spec.summary       = %q{sparse matrix}
+  spec.homepage      = "https://github.com/kevinrobayna/SparseMatrix"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "guard"
+
 end
