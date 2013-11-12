@@ -1,9 +1,3 @@
-require "sparse_matrix/version"
-
-module SparseMatrix
-  # Your code goes here...
-end
-
 class Matrix_T
     @mat
     @filename
@@ -12,29 +6,29 @@ class Matrix_T
         @filename=fn
         @mat=0
     end
-    
+
     attr_accessor :mat
-    
+
     def read_matrix
         text = File.open(@filename).read
         a = text.split(/\n\n+/)
         a = text.split(/\n/)
         @mat = to_m(a)
     end
-    
+
     def mapmap(a)
-        a.map { |r|
-            r.map { |e|
-                yield e
-            }
-        }
+         a.map { |r|
+             r.map { |e|
+                 yield e
+             }
+         }
     end
-    
+
     def to_m(a)
         a = a.map { |r| r.split(/\s+/) }
         a = mapmap(a) { |x| x.to_f }
     end
-    
+
     def to_s()
         s="| "
         for i in (0... @mat.length)
@@ -50,7 +44,7 @@ class Matrix_T
         end
         s += "|"
     end
-    
+
     def print()
         printf "| "
         for i in (0... @mat.length)
@@ -66,7 +60,7 @@ class Matrix_T
         end
         printf "|"
     end
-    
-    
-    
+
+
+
 end
